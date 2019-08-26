@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Child from './components/child/Child';
+import Alert from './components/alert/Alert';
+import ThemeSwitcher from './components/theme-switcher/ThemeSwitcher';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
       <div className="jumbotron">
         Jumbotron
     </div>
+    <div className="alert alert-primary" role="alert">Alert</div>
+    <ThemeSwitcher />
+    <Alert />
     </div>
   );
 }
