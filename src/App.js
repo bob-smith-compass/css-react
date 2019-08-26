@@ -11,6 +11,7 @@ function App() {
       <Child />
       <Child />
       <Child />
+      <button className="btn btn-primary">Button</button>
     </div>
   );
 }
