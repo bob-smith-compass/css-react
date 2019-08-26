@@ -4,14 +4,20 @@ import Child from './components/child/Child';
 
 function App() {
   return (
-    <div className="mgrid">
-      <Child />
-      <Child />
-      <Child />
-      <Child />
-      <Child />
-      <Child />
-      <button className="btn btn-primary">Button</button>
+    <div>
+
+      <div className="mgrid">
+        <Child />
+        <Child />
+        <Child />
+        <Child />
+        <Child />
+        <Child />
+        <button className="btn btn-primary">Button</button>
+      </div>
+      <div className="alert">
+        Jumbotron
+    </div>
     </div>
   );
 }
