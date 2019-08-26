@@ -2,12 +2,12 @@ import React from "react";
 // import $ from 'jquery';
 
 
-const Alert = () => {
+const Alert = (props) => {
   return (
     <div>
       <div className="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those
-        fields below.
+        <strong>{props.title} </strong> 
+        { props.content}
         <button
           type="button"
           className="close"

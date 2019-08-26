@@ -22,7 +22,7 @@ function App() {
     </div>
     <div className="alert alert-primary" role="alert">Alert</div>
     <ThemeSwitcher />
-    <Alert />
+    <Alert title="Title of alert" content="Alert content" />
     </div>
   );
 }
