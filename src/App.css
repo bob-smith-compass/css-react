@@ -69,6 +69,8 @@ justify-self
 align-self
 place-self
 
+* 
+* If you are interested in using the JavaScript components that ship with Bootstrap, you need to place the following <script> tags near the end of your pages, right before the closing </body> tag, to enable them.
 */
 .mgrid {
   display: grid;
