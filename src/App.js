@@ -15,7 +15,7 @@ function App() {
         <Child />
         <button className="btn btn-primary">Button</button>
       </div>
-      <div className="alert">
+      <div className="jumbotron">
         Jumbotron
     </div>
     </div>
