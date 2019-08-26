@@ -3,7 +3,7 @@ import React from 'react';
 const Child = () => {
     return (
         <div>
-            Child
+            <button>Child</button>
         </div>
     );
 }
