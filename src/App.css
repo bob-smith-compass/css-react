@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,52 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/**
+* CSS Grid
+* CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system. 
+* Properties for the Grid Container
+
+display
+grid-template-columns
+grid-template-rows
+grid-template-areas
+grid-template
+grid-column-gap
+grid-row-gap
+grid-gap
+justify-items
+align-items
+place-items
+justify-content
+align-content
+place-content
+grid-auto-columns
+grid-auto-rows
+grid-auto-flow
+grid
+
+* Properties for the Grid Items
+
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+grid-column
+grid-row
+grid-area
+justify-self
+align-self
+place-self
+
+*/
+.mgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.item {
+  border: solid 1px gray;
+  background-color: antiquewhite;
 }
