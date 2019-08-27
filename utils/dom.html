@@ -16,9 +16,16 @@
         console.log(document.title);
         console.log(document.title.nodeType); // undefined
         console.log(document.body['0']); // undefined - array-like NOT ARRAY
-        console.log(document.body.legth); 
+        console.log(document.body.length); 
         console.log(document.body.childNodes);  // NodeList type
-        console.log(document.body.childNodes[0]);  // NodeList type
+        console.log(document.body.childNodes[1]);  // NodeList type
+        console.log(`document.body.length: ${document.body.length}`); // 
+        for( let i = 0; i<document.body.length; i++) {
+            console.log(document.body.childNodes[i]); // check if it works
+        }
+        for( e in document.body.childNodes) {
+            console.log(e);
+        }
         </script>
 </body>
 </html>
