@@ -5,6 +5,7 @@ import Alert from './components/alert/Alert';
 import ThemeSwitcher from './components/theme-switcher/ThemeSwitcher';
 import GridInline from './components/inline-grid/GridInline';
 import Grid from './components/grid/Grid';
+import JavaScript from './components/java-script/JavaScript';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
       <ThemeSwitcher />
       <Alert title="Title of alert" content="Alert content" />
       <Grid />
+      <JavaScript />
     </div>
   );
 }
