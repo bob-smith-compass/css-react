@@ -78,16 +78,18 @@ place-self
 */
 .mgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-column-gap: 15px; 
   grid-row-gap: 20px; 
+  /* grid-template-rows: auto 100px 25%; */
 
 }
 .mgrid-inline {
   display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-column-gap: 15px; 
   grid-row-gap: 20px; 
+  /* grid-row-gap: 100%; */
 
 }
 .item {

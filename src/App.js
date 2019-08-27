@@ -4,6 +4,7 @@ import Child from './components/child/Child';
 import Alert from './components/alert/Alert';
 import ThemeSwitcher from './components/theme-switcher/ThemeSwitcher';
 import GridInline from './components/inline-grid/GridInline';
+import Grid from './components/grid/Grid';
 
 function App() {
   return (
@@ -31,9 +32,10 @@ function App() {
       <div className="jumbotron">
         Jumbotron
     </div>
-    <div className="alert alert-primary" role="alert">Alert</div>
-    <ThemeSwitcher />
-    <Alert title="Title of alert" content="Alert content" />
+      <div className="alert alert-primary" role="alert">Alert</div>
+      <ThemeSwitcher />
+      <Alert title="Title of alert" content="Alert content" />
+      <Grid />
     </div>
   );
 }
