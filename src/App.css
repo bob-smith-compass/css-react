@@ -71,10 +71,23 @@ place-self
 
 * 
 * If you are interested in using the JavaScript components that ship with Bootstrap, you need to place the following <script> tags near the end of your pages, right before the closing </body> tag, to enable them.
+* 
+* grid - generates a block-level grid
+* inline-grid - generates an inline-level grid
+
 */
 .mgrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px; 
+  grid-row-gap: 20px; 
+
+}
+.mgrid-inline {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px; 
+  grid-row-gap: 20px; 
 
 }
 .item {
