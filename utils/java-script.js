@@ -2,6 +2,15 @@
  * for
  */
 for( var i = 0; i<5; i++) {console.error(i); }
+/**
+ * sum 1 to 10
+ */
+let a = [1,2,3,4,5,6,7,8];
+let suma = 0;
+for(let i = 0; i<a.length; i++){
+    suma += a[i];
+}
+console.log(`suma: ${suma}`);
 
 console.log(i); // 5
 
@@ -90,3 +99,17 @@ while( num < 11 ) {
     num++;
 }
 console.log(sum);
+
+/**
+ * Functions
+ */
+function factorial(n) {
+    if( n===0 || n===1 ) {
+        return 1;
+    } else {
+        return factorial(n-1)*n;
+    }
+}
+console.log(`factorial(0) ${factorial(0)}`);
+console.log(`factorial(1) ${factorial(1)}`);
+console.log(`factorial(3) ${factorial(3)}`);
