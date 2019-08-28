@@ -119,5 +119,11 @@ console.log(`factorial(3) ${factorial(3)}`);
  */
 let ar = [3,4,2,1,5,6,7];
 console.log("TCL: ar", ar);
-ar.sort(); // arrays are sorted in place
+// ar.sort(); // arrays are sorted in place
+// console.log("TCL: ar", ar);
+function show(a) {
+    a.sort();
+    a.map( e => console.log(e) );
+}
+show(ar);
 console.log("TCL: ar", ar);
