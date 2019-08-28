@@ -113,3 +113,11 @@ function factorial(n) {
 console.log(`factorial(0) ${factorial(0)}`);
 console.log(`factorial(1) ${factorial(1)}`);
 console.log(`factorial(3) ${factorial(3)}`);
+
+/**
+ * reference vs by value
+ */
+let ar = [3,4,2,1,5,6,7];
+console.log("TCL: ar", ar);
+ar.sort(); // arrays are sorted in place
+console.log("TCL: ar", ar);
