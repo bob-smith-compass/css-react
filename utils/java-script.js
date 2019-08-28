@@ -51,6 +51,9 @@ switch(id){
     default:
         console.log('none');
 }
+/**
+ * if-else if
+ */
 if( id===5 ) {
     console.log('5');
 } else if(id===10) {
@@ -58,3 +61,21 @@ if( id===5 ) {
 } else {
     console.log('none');
 }
+
+
+let o = {name: 'David'};
+switch(o){
+    case {name: 'John'}:
+        console.log(`I don't know you John!`);
+        break;
+
+    case {name: 'David'}:
+        console.log('Hello David!');
+        break;
+    case o:
+        console.log('Identical!');
+        break;
+
+    default:
+        console.log(`I don't know you at all!`);
+} // I don't know you at all!
