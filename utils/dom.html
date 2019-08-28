@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>H1</h1>
+    <ul>
+        <li class="child">One</li>
+        <li class="child">Two</li>
+        <li class="child">Three</li>
+    </ul>
     <script>
         console.log(document.body);
         console.log(document.head);
@@ -35,6 +40,12 @@
         }
         nodes.map( (e, i) => console.log(`${i}: ${e}`));
         nodes.map( (e, i) => console.log(`${i}:`, e));
+        /**
+         * Event delegation
+         */
+        const children = Array.from(document.getElementsByClassName('child'));
+        children.map( e => e.addEventListener('click', (e) => console.log(e.target)));
+
         
         </script>
 </body>
