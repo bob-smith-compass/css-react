@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOM</title>
+    <style>
+        .clicked {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>H1</h1>
@@ -50,7 +55,8 @@
         document.getElementsByClassName('parent')[0]
             .addEventListener('click', e => {
                 if(e.target.className === 'child') {
-                    console.log(`Parent: `, e.target);
+                    e.target.className = 'clicked';
+                    console.log(`Parent: `, e.target.innerHTML);
                 }
             })
 
