@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>H1</h1>
-    <ul>
-        <li class="child">One</li>
-        <li class="child">Two</li>
-        <li class="child">Three</li>
+    <ul class="parent">
+        <li class="child">Click One</li>
+        <li class="child">Click Two</li>
+        <li class="child">Click Three</li>
     </ul>
     <script>
         console.log(document.body);
@@ -45,6 +45,15 @@
          */
         const children = Array.from(document.getElementsByClassName('child'));
         children.map( e => e.addEventListener('click', (e) => console.log(e.target)));
+        // This will add the function to each one of the children
+        // Memory not used efficiently if many children
+        document.getElementsByClassName('parent')[0]
+            .addEventListener('click', e => {
+                if(e.target.className === 'child') {
+                    console.log(`Parent: `, e.target);
+                }
+            })
+
 
         
         </script>
