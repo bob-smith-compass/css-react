@@ -79,3 +79,14 @@ switch(o){
     default:
         console.log(`I don't know you at all!`);
 } // I don't know you at all!
+
+/**
+ * while
+ */
+let num = 1;
+let sum = 0;
+while( num < 11 ) {
+    sum += num;
+    num++;
+}
+console.log(sum);

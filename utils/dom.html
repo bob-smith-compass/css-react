@@ -26,6 +26,14 @@
         for( e in document.body.childNodes) {
             console.log(e);
         }
+        const nodes = Array.from(document.body.childNodes);
+        for ( e in nodes ) {
+            console.log(e); // 1 2 3 4...
+        }
+        for ( let j = 0; j<nodes.length; j++ ){
+            console.log(nodes[j]);
+        }
+        
         </script>
 </body>
 </html>
