@@ -18,3 +18,7 @@ function Account(amount, type) {
 let cacc = new Account(100, 'checking');
 console.log(cacc.show());
 console.log(cacc.toString());
+
+let cacc2 = new Account(99, 'saving');
+// console.log(cacc.show.());
+console.log(cacc.show.bind(cacc2));
