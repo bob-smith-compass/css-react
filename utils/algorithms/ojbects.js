@@ -43,3 +43,9 @@ try {
     console.log(err.message);
 }
 
+/**
+ * JavaScript Arrays - objects
+ */
+console.log(typeof [1,2,3]); // object
+console.log(['a', 'b', 'c'][0]);
+console.log({'a': 'A', 'b': 'B', 'c': 'C'}['a']); // A
