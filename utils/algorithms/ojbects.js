@@ -3,9 +3,9 @@
  */
 function Account(amount, type) {
     this.type = type;
-    this.amount = amount;
+    this.balance = amount;
     this.show = function() {
-        console.log(`Your ballance is ${this.amount}`);
+        console.log(`Your ballance is ${this.balance}`);
         return this.amount;
     }
     this.add = function() {
@@ -13,6 +13,19 @@ function Account(amount, type) {
     }
     this.toString = function() {
         return `function Account(amount, type) { show() add() }`;
+    }
+    this.deposit = function(amount) {
+        this.balance += amount;
+        return this.balance;
+    }
+    this.withdraw = function(amount) {
+        if(amount <= this.balance) {
+
+            this.balance -= amount;
+        } else {
+            throw new Error('Insufficient ballance');
+        }
+        return this.balance;
     }
 }
 let cacc = new Account(100, 'checking');
@@ -22,3 +35,11 @@ console.log(cacc.toString());
 let cacc2 = new Account(99, 'saving');
 // console.log(cacc.show.());
 console.log(cacc.show.bind(cacc2));
+console.log(cacc.deposit(50));
+console.log(cacc.withdraw(70));
+try {
+    console.log(cacc.withdraw(1000));
+} catch(err) {
+    console.log(err.message);
+}
+
