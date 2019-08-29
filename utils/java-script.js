@@ -105,6 +105,11 @@ console.log(sum);
 
 /**
  * Functions
+ * 
+ * recursion
+ * any recursion can be handled by iterative
+ * JS can handle pretty deep but sometime 
+ * we need even deeper - so iterative
  */
 function factorial(n) {
     if( n===0 || n===1 ) {
