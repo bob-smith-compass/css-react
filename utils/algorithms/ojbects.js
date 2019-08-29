@@ -49,3 +49,21 @@ try {
 console.log(typeof [1,2,3]); // object
 console.log(['a', 'b', 'c'][0]);
 console.log({'a': 'A', 'b': 'B', 'c': 'C'}['a']); // A
+/**
+ * [] - array operator
+ * ar = [1,2,3,4,5] - array variable
+ * ar = new Array(1,2,3,4,5)
+ */
+let ar = [1,2,3,4,5] // array variable
+let arcon = new Array(1,2,3,4,5);
+console.log(ar.length);
+console.log(arcon.length);
+
+/**
+ * Interview Questions
+ * 1. what is the difference between Array(2) and Array(1,2)
+ */
+let emptyArray = new Array(2);
+let twoElementArray = new Array(1,2);
+console.log(emptyArray); // [ <2 empty items> ]
+console.log(twoElementArray);
