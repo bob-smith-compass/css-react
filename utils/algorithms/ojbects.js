@@ -62,8 +62,13 @@ console.log(arcon.length);
 /**
  * Interview Questions
  * 1. what is the difference between Array(2) and Array(1,2)
+ * 2. not all array elements same type
+ * 3. object is an array is an object Array.isArray({name: 'David'}) // true
  */
 let emptyArray = new Array(2);
 let twoElementArray = new Array(1,2);
 console.log(emptyArray); // [ <2 empty items> ]
 console.log(twoElementArray);
+let objects2 = [1, 'A', `John`, {name: 'David'}];
+console.log(objects2);
+console.log(Array.isArray({name: 'David'})); // false now
