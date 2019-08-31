@@ -70,4 +70,6 @@ console.log(a.indexOf(-99)); //
 console.log(a.indexOf(-19) ===  -1? "Not found" : a[a.indexOf(3)]); // return element if exists, else 
 console.log(a.indexOf(3) ===  -1? "Not found" : a[a.indexOf(3)]); // return element if exists, else 
 
-
+let all = [2,2,2,2,2];
+console.log(all.indexOf(2)); // first found index
+console.log(all.lastIndexOf(2)); // last found index
