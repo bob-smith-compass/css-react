@@ -81,3 +81,10 @@ console.log(all.lastIndexOf(2)); // last found index
  */
 console.log([1,2,3,4].join()); // 1,2,3,4
 console.log([1,2,3,4].toString()); // 1,2,3,4
+let first = ['A', 'B', 'C', 'D', 'E', 'F'];
+let second = ['G', 'H', 'I'];
+let both = first.concat(second);
+console.log(both);
+let middle = first.slice(1,3); // 1 inclusive and upto ( not inclusive 3 ) so 1 and 2
+console.log(middle);
+console.log(first.splice(1, 3)); // start at position 1 and take 3 elements
