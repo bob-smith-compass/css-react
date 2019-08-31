@@ -73,3 +73,11 @@ console.log(a.indexOf(3) ===  -1? "Not found" : a[a.indexOf(3)]); // return elem
 let all = [2,2,2,2,2];
 console.log(all.indexOf(2)); // first found index
 console.log(all.lastIndexOf(2)); // last found index
+
+/**
+ * String Representations of Arrays
+ * 1. join()
+ * 2. toString()
+ */
+console.log([1,2,3,4].join()); // 1,2,3,4
+console.log([1,2,3,4].toString()); // 1,2,3,4
