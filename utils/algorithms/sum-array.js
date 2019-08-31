@@ -60,3 +60,14 @@ var acopy = a;
 a = [1,2,3];
 console.log(acopy);
 console.log(a);
+
+/**
+ * Searchaing arrays
+ * 1. indexOf()
+ */
+console.log(a.indexOf(3)); // 
+console.log(a.indexOf(-99)); // 
+console.log(a.indexOf(-19) ===  -1? "Not found" : a[a.indexOf(3)]); // return element if exists, else 
+console.log(a.indexOf(3) ===  -1? "Not found" : a[a.indexOf(3)]); // return element if exists, else 
+
+
