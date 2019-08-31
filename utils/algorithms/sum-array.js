@@ -37,3 +37,16 @@ function addUpTo(n, a) {
 }
 console.log(addUpTo(3, a));
 console.log(addUpTo(20, a));
+/**
+ * Array operations
+ * 1. assign 1 to 100 to array
+ */
+for(let i = 0; i<100; i++){
+    a[i] = i+1;
+}
+console.log(a);
+let str = "Arrays are cool!";
+let mistake = [str.split(' ')]; //[ [ 'Arrays', 'are', 'cool!' ] ]
+let words = str.split(' ');; //[ [ 'Arrays', 'are', 'cool!' ] ]
+console.log(words);
+console.log(mistake);
