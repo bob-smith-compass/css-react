@@ -1,3 +1,9 @@
+# Relay Builds on top of Flux
+
+`nvm alias default node`
+`Relay` - data fetching for React applications
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

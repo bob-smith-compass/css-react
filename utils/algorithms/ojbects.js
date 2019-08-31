@@ -71,4 +71,5 @@ console.log(emptyArray); // [ <2 empty items> ]
 console.log(twoElementArray);
 let objects2 = [1, 'A', `John`, {name: 'David'}];
 console.log(objects2);
-console.log(Array.isArray({name: 'David'})); // false now
+console.log(Array.isArray({name: 'David'})); // false 
+console.log(Array.isArray([{name: 'David'}])); // true 
