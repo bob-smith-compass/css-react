@@ -100,3 +100,11 @@ console.log(carray); // 4
 console.log(uncomplete); // mutate array in place
 console.log(uncomplete.splice('E')); // 5
 console.log(uncomplete); // mutate array in place
+let shme = ['A', 'B', 'C', 'E', 'F'];
+console.log(shme.shift('G')); // A - trickey - ignore `G` if not integer
+console.log(shme); // [ 'B', 'C' ]
+console.log(shme.shift(2));
+console.log(shme);
+while(shme.length) {
+    console.log(shme.shift());
+}
