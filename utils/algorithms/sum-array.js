@@ -50,3 +50,13 @@ let mistake = [str.split(' ')]; //[ [ 'Arrays', 'are', 'cool!' ] ]
 let words = str.split(' ');; //[ [ 'Arrays', 'are', 'cool!' ] ]
 console.log(words);
 console.log(mistake);
+/**
+ * Copy arrays
+ * 1. shallow
+ * 2. deep
+ */
+// let acopy = a;
+var acopy = a;
+a = [1,2,3];
+console.log(acopy);
+console.log(a);
