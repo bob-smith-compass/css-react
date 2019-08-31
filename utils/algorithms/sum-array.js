@@ -88,3 +88,15 @@ console.log(both);
 let middle = first.slice(1,3); // 1 inclusive and upto ( not inclusive 3 ) so 1 and 2
 console.log(middle);
 console.log(first.splice(1, 3)); // start at position 1 and take 3 elements
+/**
+ * Mutator function
+ * 1. push() - add to the END
+ * 2. unshift() - // add to the BEGINING
+ */
+console.log([2,3,4].unshift(1)); // 4
+let uncomplete = ['B', 'C', 'D'];
+let carray = uncomplete.slice('A');
+console.log(carray); // 4
+console.log(uncomplete); // mutate array in place
+console.log(uncomplete.splice('E')); // 5
+console.log(uncomplete); // mutate array in place
