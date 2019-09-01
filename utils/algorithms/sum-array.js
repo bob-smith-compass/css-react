@@ -134,3 +134,27 @@ a.pop();
 console.log(a);
 a.splice(a.length, 0, ...[7,8,9]);
 console.log(a);
+a = [1,2,3, 50, 60, 70, 4,5,6];
+a.splice(3, 1, 3); // starting at position 3 [ 1, 2, 3, 3, 60, 70, 4, 5, 6 ]
+a.splice(3, 0, 3); // starting at position 3 ( inclusive ) remove 3 elements
+console.log(a);
+/**
+ * sorting
+ * reversing
+ */
+a = ["John", "Bob", "David"];
+console.log(a);
+a.reverse();
+console.log(a);
+a.sort();
+console.log(a);
+a = ["John01", "Bob02", "David3", "David03"];
+console.log(a);
+a.reverse();
+console.log(a);
+a.sort();
+console.log(a);
+a = [1,2, 100, 200];
+console.log(a);
+a.sort();
+console.log(a); // [ 1, 100, 2, 200 ]
