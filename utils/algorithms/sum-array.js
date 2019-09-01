@@ -216,4 +216,12 @@ console.log(["John", "Bob", "David"].map( (e) => {
  * filter()
  */
 console.log([1,2,3,4,5,6].filter( (e) => e%2 === 0 )); // [ 2, 4, 6 ]
+let wrongs = [];
+wrongs = ["decieve", "received", "achieve"].filter( (e) =>  {
+    console.log(e);
+    if(e.indexOf("cie") !== -1 ){
+        return e;
+    }
+});
+console.log(wrongs);
 
