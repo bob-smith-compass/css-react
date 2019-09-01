@@ -228,3 +228,13 @@ console.log(wrongs);
  * 2-D Arrays in JS
  * JavaScript arrays are only one-dimensional, but you can create multidimensional arrays by creating arrays of arrays. 
  */
+Array.matrix = function(numrows, numcols, initial) { var arr = []; for(let i=0;i<numrows;++i){
+    var columns = []; for(let j=0;j<numcols;++j){
+                 columns[j] = initial;
+              }
+              arr[i] = columns;
+           }
+    return arr; 
+}
+let D2 = Array.matrix(3,4,0);
+console.log(D2);
