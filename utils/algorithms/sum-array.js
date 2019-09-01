@@ -161,3 +161,33 @@ console.log(a); // [ 1, 100, 2, 200 ]
 let comparator = (x, y) => x - y;
 a.sort(comparator);
 console.log(a);
+
+/**
+ * Iterators
+ */
+let square = (e) => {
+    console.log(e);
+    return e * e;
+};
+let mquare = function(e) {
+    console.log(e);
+    return e * e;
+};
+a = [1,2,3,4,5];
+let sqra = a.forEach(square); // returns new array
+console.log(a);
+sqra = a.forEach(mquare); // returns new array
+console.log(a);
+console.log(sqra);
+sqra = a.map(square);
+console.log(a);
+console.log(sqra);
+let z = [1,2,3];
+console.log(z.forEach(function(e) {
+    console.log(e);
+    // return e * e;
+    e = e * e;
+}));
+console.log(z);
+let allEven = z.every( (e) => e%2 === 0 );
+console.log("TCL: allEven", allEven);
