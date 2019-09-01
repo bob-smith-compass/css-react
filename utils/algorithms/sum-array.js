@@ -203,3 +203,8 @@ let total = 100;
 console.log([5,10].reduce((total, currentValue) => total + currentValue)); // 15!!! You will think you are able to pass initial value
 console.log(["John", "Bob", "David"].reduce((all, cur) => `${all} AND ${cur}`));
 console.log(["John", "Bob", "David"].reduceRight((all, cur) => `${all} AND ${cur}`));
+/**
+ * Arrays & Strings
+ * 1. return first letter of each word
+ */
+console.log(["John", "Bob", "David"].map( (e) => e[0])); // [ 'J', 'B', 'D' ]
