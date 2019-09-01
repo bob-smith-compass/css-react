@@ -206,5 +206,10 @@ console.log(["John", "Bob", "David"].reduceRight((all, cur) => `${all} AND ${cur
 /**
  * Arrays & Strings
  * 1. return first letter of each word
+ * 2. reverse each work in the array
  */
 console.log(["John", "Bob", "David"].map( (e) => e[0])); // [ 'J', 'B', 'D' ]
+console.log(["John", "Bob", "David"].map( (e) => {
+    return [...e].reverse().join(''); // without empy string join() will insert comma
+})); // [ 'nhoJ', 'boB', 'divaD' ]
+
