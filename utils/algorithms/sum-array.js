@@ -224,4 +224,7 @@ wrongs = ["decieve", "received", "achieve"].filter( (e) =>  {
     }
 });
 console.log(wrongs);
-
+/**
+ * 2-D Arrays in JS
+ * JavaScript arrays are only one-dimensional, but you can create multidimensional arrays by creating arrays of arrays. 
+ */
