@@ -191,3 +191,9 @@ console.log(z.forEach(function(e) {
 console.log(z);
 let allEven = z.every( (e) => e%2 === 0 );
 console.log("TCL: allEven", allEven);
+allEven = [2,4,6].every( (e) => e%2 === 0 );
+console.log("TCL: allEven", allEven);
+console.log([1,2,3].some( (e) => e %2 === 0 ));
+console.log([1,3].some( (e) => e %2 === 0 ));
+
+
