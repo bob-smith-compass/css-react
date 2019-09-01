@@ -200,5 +200,5 @@ console.log([1,3].some( (e) => e %2 === 0 ));
  * reduce
  */
 let total = 100;
-console.log([5,10].reduce((total, currentValue) => total + currentValue)); // 15!!!
-
+console.log([5,10].reduce((total, currentValue) => total + currentValue)); // 15!!! You will think you are able to pass initial value
+console.log(["John", "Bob", "David"].reduce((all, cur) => `${all} AND ${cur}`));
