@@ -196,4 +196,9 @@ console.log("TCL: allEven", allEven);
 console.log([1,2,3].some( (e) => e %2 === 0 ));
 console.log([1,3].some( (e) => e %2 === 0 ));
 
+/**
+ * reduce
+ */
+let total = 100;
+console.log([5,10].reduce((total, currentValue) => total + currentValue)); // 15!!!
 
