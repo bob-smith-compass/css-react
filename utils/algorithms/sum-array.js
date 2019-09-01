@@ -158,3 +158,6 @@ a = [1,2, 100, 200];
 console.log(a);
 a.sort();
 console.log(a); // [ 1, 100, 2, 200 ]
+let comparator = (x, y) => x - y;
+a.sort(comparator);
+console.log(a);
