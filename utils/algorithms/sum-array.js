@@ -124,3 +124,13 @@ a.splice(1, 3); // starting at position 1 remove/return 3 elements
 console.log(a);
 a.splice(1, 0, 3,4,5); // statring after position 1 add ( 0 ) 3 elements 3,4,5
 console.log(a);
+/**
+ * Note old books may say using [3,4,5] array
+ * but now it will add the array [3,4,5] as the only element at position 1
+ */
+a.splice(a.length, 0, [7,8,9]);
+console.log(a);
+a.pop();
+console.log(a);
+a.splice(a.length, 0, ...[7,8,9]);
+console.log(a);
