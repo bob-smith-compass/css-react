@@ -108,3 +108,19 @@ console.log(shme);
 while(shme.length) {
     console.log(shme.shift());
 }
+/**
+ * splice()
+ * 1. add elements
+ * 2. remove elements
+ * 3. both from begining and end
+ */
+a = [1,2,3,4,5];
+console.log(a);
+a.splice(0, 1); // from 0 position remove 1 element
+console.log(a);
+a.splice(a.length, 0, 6); // add 6 to the end of the array
+console.log(a);
+a.splice(1, 3); // starting at position 1 remove/return 3 elements
+console.log(a);
+a.splice(1, 0, 3,4,5); // statring after position 1 add ( 0 ) 3 elements 3,4,5
+console.log(a);
