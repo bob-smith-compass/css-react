@@ -212,4 +212,8 @@ console.log(["John", "Bob", "David"].map( (e) => e[0])); // [ 'J', 'B', 'D' ]
 console.log(["John", "Bob", "David"].map( (e) => {
     return [...e].reverse().join(''); // without empy string join() will insert comma
 })); // [ 'nhoJ', 'boB', 'divaD' ]
+/**
+ * filter()
+ */
+console.log([1,2,3,4,5,6].filter( (e) => e%2 === 0 )); // [ 2, 4, 6 ]
 
