@@ -286,13 +286,25 @@ while(oArray.length) {
     console.log(oArray.pop());
 }
 console.log(oArray); // []
-oArray.reduceRight( (total, cur) => {
-    // console.log(e.name);
-    // console.log(cur);
-    // total += cur;
-});
-console.log([1,2,3].reduceRight((total, cur) => {
-    // console.log(prev, cur);
-    // return prev += cur;
-    total += cur; // TODO dubug
-}));
+oArray = [
+    {name: 'David', ssn: 12345678},
+    {name: 'John', ssn: 32345644},
+    {name: 'Bob', ssn: 33345678}
+];
+if(oArray.length !== 0) {
+    oArray.reduceRight( (total, cur) => {
+        // console.log(e.name);
+        // console.log(cur);
+        // total += cur;
+        // total.name += cur.name;
+        console.log(`cur: ${cur.name}`);
+    });
+};
+// console.log([1,2,3].reduceRight((total, cur) => {
+//     // console.log(prev, cur);
+//     // return prev += cur;
+//     // total += cur; // TODO dubug
+// }));
+[1,2,3].reduceRight( (prev, next) => {
+    return prev + next;
+})
