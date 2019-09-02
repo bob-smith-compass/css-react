@@ -1,3 +1,5 @@
+// import fs from 'fs'; 
+let fs = require('fs');
 
 let a = [1, 2, 3, 4, 5, 4, 5];
 let sum = a.reduce((cur, next) => {
@@ -413,3 +415,16 @@ var mgen = idMaker(); // "Generator { }"
 console.log(mgen.next().value); // 0
 console.log(mgen.next().value); // 1
 console.log(mgen.next().value); // 2
+
+/**
+ * Read file
+ */
+// let data = fs.readFileSync('movies.txt');
+// console.log(data);
+
+// const fs = require('fs');
+
+let rawdata = fs.readFileSync('./student.json');
+// let rawdata = fs.readFile('./student.json');
+let student = JSON.parse(rawdata);
+console.log(student);
