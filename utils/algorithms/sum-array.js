@@ -476,3 +476,21 @@ let c = sum2(x,y);
 console.log(c);
 console.log(x); // 1
 console.log(y); // { val: 3 }
+let ar = [2,3,5,1,4];
+let msort = function(a) {   
+    return a.sort();
+};
+console.log(msort(ar));
+console.log(ar);
+
+/**
+ * Closures
+ */
+let closure = function(a){
+    let x = 100;
+    function f() {
+        return x*a;
+    }
+    return f;
+};
+console.log(closure(50)());
