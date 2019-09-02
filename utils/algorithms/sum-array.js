@@ -282,3 +282,17 @@ oArray.map( (e) => {
         // console.log(`g`);
     // });
 });
+while(oArray.length) {
+    console.log(oArray.pop());
+}
+console.log(oArray); // []
+oArray.reduceRight( (total, cur) => {
+    // console.log(e.name);
+    // console.log(cur);
+    // total += cur;
+});
+console.log([1,2,3].reduceRight((total, cur) => {
+    // console.log(prev, cur);
+    // return prev += cur;
+    total += cur; // TODO dubug
+}));
