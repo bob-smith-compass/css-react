@@ -265,3 +265,20 @@ for (let i = 0; i < D2.length; i++) {
     }
 }
 console.log(D2);
+/**
+ * all the functions and properties of arrays work with objects.
+ */
+let oArray = [
+    {name: 'David', ssn: 12345678},
+    {name: 'John', ssn: 32345644},
+    {name: 'Bob', ssn: 33345678}
+];
+oArray.map( (e) => {
+    console.log(e);
+    console.log(`Hello Mr. ${e}`);
+    // e.map( (g) => {
+    // e.forEach( (g) => {
+        // console.log(`Hello Mr. ${g}`);
+        // console.log(`g`);
+    // });
+});
