@@ -238,3 +238,5 @@ Array.matrix = function(numrows, numcols, initial) { var arr = []; for(let i=0;i
 }
 let D2 = Array.matrix(3,4,0);
 console.log(D2);
+D2.map( (e) => e.map( (g) => g += 5 )); // BUG
+console.log(D2);
