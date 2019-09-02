@@ -1,3 +1,4 @@
+
 let a = [1, 2, 3, 4, 5, 4, 5];
 let sum = a.reduce((cur, next) => {
     console.log(`cur: ${cur} next: ${next}`); // take elements as per index so 1 is frist cur and 2 is first next
@@ -315,23 +316,48 @@ if (oArray.length !== 0) {
  * ES5 implementation
  */
 function List() {
+
+    this.show = function () {
+        console.log(this._list);
+    }
     this._list = Array.from(arguments);
+    this.listSize = function () {
+        return this._list.length;
+    };
     this.first = () => {
+        return this._list[0];
+    };
+    this.removeFirst = () => {
         console.log(`First: ${this._list.shift()}`);
     };
     this.last = () => {
         console.log(`Last: ${this._list.pop()}`);
     };
-    this.remove = () => {
-        console.log('remove');
+    this.remove = (e) => {
+        /**
+         * 1. fid element
+         * 2. remove it
+         * 3. shift array
+         */
+        console.log(this._list.indexOf(e));
+        return this._list.splice(this._list.indexOf(e), 1);
+        // return this._list;
     };
     this.add = () => {
         console.log('add');
     };
+    this.append = (e) => {
+        if (e) {
+            this._list.push(e);
+        }
+    }
 }
 let list = new List("First", "Second", "Third", "Other", "Last");
 // let list = new List();
-list.first();
+console.log(list.first());
 list.last();
 list.remove();
 list.add();
+console.log(list.listSize());
+list.show();
+// list.remove('Third');
