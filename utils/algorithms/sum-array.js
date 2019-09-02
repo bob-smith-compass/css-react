@@ -457,3 +457,7 @@ if({} == {}) {
 } else {
     console.log(false);
 }
+let str1 = "hi";
+let str2 = "hi";
+console.log(str1 == str2); // true
+console.log(str1 === str2); // true
