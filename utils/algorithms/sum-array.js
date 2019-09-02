@@ -390,13 +390,26 @@ list.show();
  * 1. with new ES6 generator functions
  */
 function* gen() {
-    yield 1;
-    yield 2;
-    yield 3;
+    let index = 0;
+    while(true){
+        yield index++;
+    }
 }
-gen();
-console.log(gen()); //Object [Generator] {}
-console.log(gen().next()); // { value: 1, done: false }
-console.log(gen().next()); // { value: 1, done: false }
-console.log(gen().next().value); 
-console.log(gen().next()); 
+let generator = gen();
+console.log(generator); //Object [Generator] {}
+console.log(generator.next()); // { value: 1, done: false }
+console.log(generator.next()); // { value: 1, done: false }
+console.log(generator.next().value); 
+console.log(generator.next()); 
+
+function* idMaker() {
+    var index = 0;
+    while(true)
+        yield index++;
+}
+
+var mgen = idMaker(); // "Generator { }"
+
+console.log(mgen.next().value); // 0
+console.log(mgen.next().value); // 1
+console.log(mgen.next().value); // 2
