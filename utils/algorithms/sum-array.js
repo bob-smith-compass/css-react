@@ -340,7 +340,10 @@ function List() {
          * 3. shift array
          */
         // console.log(this._list.indexOf(e));
-        this._list.splice(this._list.indexOf(e), 1);
+        let position = this._list.indexOf(e);
+        if(position !== -1){
+            this._list.splice(position, 1); // TODO: -1 otherwise splice will remove from the end 
+        }
         return this._list; // [ 'First', 'Second', 'Third', 'Other' ]
     };
     this.add = () => {
@@ -360,6 +363,6 @@ list.last();
 list.add();
 console.log(list.listSize());
 list.show();
-// list.remove('Third');
-list.remove('NoSuchElement');
+list.remove('Third');
+// list.remove('NoSuchElement');
 console.log(list._list);
