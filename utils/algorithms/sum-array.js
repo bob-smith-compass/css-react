@@ -446,3 +446,14 @@ function displayList(list) {
 let mlist = new List("First", "Second", "Third", "Other", "Last");
 displayList(mlist);
 displayList([1,2,3,4]);
+
+/**
+ * JavaScript Weirdos
+ */
+console.log({} ==  {}); // false
+console.log({} ===  {}); // false
+if({} == {}) {
+    console.log(true);
+} else {
+    console.log(false);
+}
