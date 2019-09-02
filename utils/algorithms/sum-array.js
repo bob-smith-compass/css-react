@@ -248,3 +248,18 @@ D2.map( (e) => {
     });
     return temp; // TODO debug
 });
+D2.forEach( (e) => {
+    console.log(e);
+    e.forEach( (g) => {
+        console.log(g)
+        // TODO
+    })
+})
+for (let i = 0; i < D2.length; i++) {
+    const element = D2[i];
+    for (let j = 0; j < element.length; j++) {
+        D2[i][j] = 5;
+        
+    }
+}
+console.log(D2);
