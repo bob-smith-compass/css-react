@@ -240,3 +240,11 @@ let D2 = Array.matrix(3,4,0);
 console.log(D2);
 D2.map( (e) => e.map( (g) => g += 5 )); // BUG
 console.log(D2);
+D2.map( (e) => {
+    console.log(`e: `, e);
+    let temp = e.map( (g) => {
+        console.log(`g: `, g);
+        g += 1;
+    });
+    return temp; // TODO debug
+});
