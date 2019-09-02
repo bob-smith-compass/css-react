@@ -463,3 +463,16 @@ console.log(str1 == str2); // true
 console.log(str1 === str2); // true
 console.log(null == undefined); // true
 console.log(null === undefined); // true
+console.log("1".toString()); // 1
+
+let sum2 = function(x, y){
+    return(++x) + (++y.val);
+}
+let x = 1;
+let y = {
+    val: 2
+};
+let c = sum2(x,y);
+console.log(c);
+console.log(x); // 1
+console.log(y); // { val: 3 }
