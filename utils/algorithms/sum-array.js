@@ -358,6 +358,11 @@ function List() {
         console.log(e, position);
         this._list.splice(position, 0, e);
     };
+    this.clear = () => {
+        delete this._list;
+        this._list = [];
+        return true;
+    };
     this.toString = () => {
         return this._list;
     };
@@ -376,4 +381,6 @@ console.log(list._list);
 console.log(list.toString()); // [object Object] - if not implemented
 list.show();
 list.insert("Third", 2);
+list.show();
+list.clear();
 list.show();
