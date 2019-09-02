@@ -339,9 +339,9 @@ function List() {
          * 2. remove it
          * 3. shift array
          */
-        console.log(this._list.indexOf(e));
-        return this._list.splice(this._list.indexOf(e), 1);
-        // return this._list;
+        // console.log(this._list.indexOf(e));
+        this._list.splice(this._list.indexOf(e), 1);
+        return this._list; // [ 'First', 'Second', 'Third', 'Other' ]
     };
     this.add = () => {
         console.log('add');
@@ -356,8 +356,9 @@ let list = new List("First", "Second", "Third", "Other", "Last");
 // let list = new List();
 console.log(list.first());
 list.last();
-list.remove();
+// list.remove();
 list.add();
 console.log(list.listSize());
 list.show();
-// list.remove('Third');
+list.remove('Third');
+console.log(list._list);
