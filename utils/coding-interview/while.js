@@ -2,13 +2,19 @@ let a = [1, 2, 3, 4, 1];
 
 function hasDuplicate(nums) {
 
-    while (a.length) {
-        let cur = a.pop();
-        return a.some( (e) => e === cur );
+    while (nums.length) {
+        let cur = nums.pop();
+        // return a.some( (e) => e === cur ); // TODO: listen to damn sonar!
+        if((nums.some( (e) => e === cur )) === true) {
+            return true;
+        };
     }
+    return false; // TODO: DEBUGGED
 
 }
-let result = hasDuplicate([0, 4, 5, 0, 3, 6]);
+let result = hasDuplicate([]); // DEBUGGED
+console.log(result);
+result = hasDuplicate([0, 4, 5, 0, 3, 6]);
 console.log(result);
 result = hasDuplicate([1,2,3]);
 console.log(result);
