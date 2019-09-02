@@ -424,7 +424,25 @@ console.log(mgen.next().value); // 2
 
 // const fs = require('fs');
 
-let rawdata = fs.readFileSync('./student.json');
+// let rawdata = fs.readFileSync('./student.json');
 // let rawdata = fs.readFile('./student.json');
-let student = JSON.parse(rawdata);
-console.log(student);
+// let student = JSON.parse(rawdata);
+// console.log(student);
+
+/**
+ * different display based on object type
+ * 1. instanceof
+ */
+function displayList(list) {
+    if(list instanceof List) {
+        list._list.map( (e) => {
+            console.log(e);
+        });
+    } else if(list instanceof Array){
+        console.log(`You've passed me an array`);
+        console.log(list);
+    }
+}
+let mlist = new List("First", "Second", "Third", "Other", "Last");
+displayList(mlist);
+displayList([1,2,3,4]);
