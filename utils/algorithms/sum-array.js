@@ -384,3 +384,19 @@ list.insert("Third", 2);
 list.show();
 list.clear();
 list.show();
+
+/**
+ * implenting Iterators with Generators
+ * 1. with new ES6 generator functions
+ */
+function* gen() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+gen();
+console.log(gen()); //Object [Generator] {}
+console.log(gen().next()); // { value: 1, done: false }
+console.log(gen().next()); // { value: 1, done: false }
+console.log(gen().next().value); 
+console.log(gen().next()); 
