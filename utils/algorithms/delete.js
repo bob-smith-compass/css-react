@@ -20,3 +20,8 @@ console.log(o);
  * typeof
  */
 console.log(typeof NaN); // number
+console.log(typeof 2); // number
+console.log(typeof "David"); // number
+console.log(typeof [1,2,3]); // object
+console.log(typeof {name: "John"}); // object
+console.log(typeof function(){console.log('f')}); // function
