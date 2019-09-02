@@ -353,6 +353,9 @@ function List() {
         if (e) {
             this._list.push(e);
         }
+    };
+    this.toString = () => {
+        return this._list;
     }
 }
 let list = new List("First", "Second", "Third", "Other", "Last");
@@ -366,3 +369,4 @@ list.show();
 list.remove('Third');
 // list.remove('NoSuchElement');
 console.log(list._list);
+console.log(list.toString()); // [object Object] - if not implemented
