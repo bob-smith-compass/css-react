@@ -462,3 +462,4 @@ let str2 = "hi";
 console.log(str1 == str2); // true
 console.log(str1 === str2); // true
 console.log(null == undefined); // true
+console.log(null === undefined); // true
