@@ -360,5 +360,6 @@ list.last();
 list.add();
 console.log(list.listSize());
 list.show();
-list.remove('Third');
+// list.remove('Third');
+list.remove('NoSuchElement');
 console.log(list._list);
