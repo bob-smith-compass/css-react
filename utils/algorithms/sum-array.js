@@ -354,9 +354,13 @@ function List() {
             this._list.push(e);
         }
     };
+    this.insert = (e, position) => {
+        console.log(e, position);
+        this._list.splice(position, 0, e);
+    };
     this.toString = () => {
         return this._list;
-    }
+    };
 }
 let list = new List("First", "Second", "Third", "Other", "Last");
 // let list = new List();
@@ -370,3 +374,6 @@ list.remove('Third');
 // list.remove('NoSuchElement');
 console.log(list._list);
 console.log(list.toString()); // [object Object] - if not implemented
+list.show();
+list.insert("Third", 2);
+list.show();
