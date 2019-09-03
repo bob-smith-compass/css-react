@@ -17,3 +17,24 @@
          this.next = null;
         }
  }
+
+ /**
+  * 1. Create Link List
+  * 2. Sole the following https://leetcode.com/problems/add-two-numbers/
+  * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+  * Output: 7 -> 0 -> 8
+  * Explanation: 342 + 465 = 807.
+  * 
+  */
+const head = new LinkedListNode(2);
+head.next = new LinkedListNode(4);
+head.next.next = new LinkedListNode(3);
+/**
+ * Traverse
+ */
+let current = head;
+
+while(current.next !== null){
+    console.log(current.data);
+    current = current.next;
+}
