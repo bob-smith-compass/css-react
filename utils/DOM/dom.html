@@ -11,12 +11,18 @@
             border: solid 1px gray;
             border-radius: 5px;
         }
+        button {
+            float: right;
+        }
     </style>
 </head>
 <body>
 
     <div class="parent" onclick="alert('Parent')">
-            <div id="me">Me</div>
+            <div id="me">Me
+
+                <button onclick="removeHandler()">Remove Click</button>
+            </div>
     </div>
 
     <script src="./dom.js"></script>
