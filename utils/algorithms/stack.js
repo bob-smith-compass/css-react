@@ -25,7 +25,7 @@ class Stack {
         this._stack.push(e);
     }
     pop(e) {
-        this._stack.pop(e);
+        return this._stack.pop(e);
     }
 }
 let statck = new Stack("A");
@@ -33,6 +33,11 @@ statck.push('B');
 statck.push('C');
 statck.push('D');
 
+console.log(statck.pop());
+statck.pop();
 statck.pop();
 
+
+statck.show();
+statck.pop(); // no error because array will take care of it
 statck.show();
