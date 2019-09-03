@@ -29,6 +29,9 @@
 const head = new LinkedListNode(2);
 head.next = new LinkedListNode(4);
 head.next.next = new LinkedListNode(3);
+const list2 = new LinkedListNode(5);
+list2.next = new LinkedListNode(6);
+list2.next.next = new LinkedListNode(4);
 /**
  * Traverse
  */
@@ -36,5 +39,6 @@ let current = head;
 
 while(current.next !== null){
     console.log(current.data);
+    console.log(current.next);
     current = current.next;
 }
