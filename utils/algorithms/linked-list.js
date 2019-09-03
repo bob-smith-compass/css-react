@@ -29,6 +29,7 @@
 const head = new LinkedListNode(2);
 head.next = new LinkedListNode(4);
 head.next.next = new LinkedListNode(3);
+
 const list2 = new LinkedListNode(5);
 list2.next = new LinkedListNode(6);
 list2.next.next = new LinkedListNode(4);
@@ -41,4 +42,19 @@ while(current.next !== null){
     console.log(current.data);
     console.log(current.next);
     current = current.next;
+    /**
+     * off by 1 error
+     * if current.next is null it may have data but loop will exit
+     * so print current .data
+     */
+    if(current.next === null) {
+        console.log(current.data);
+    } // Or use do while loop
+
 }
+current = list2;
+do {
+    // TODO: FIX BUG OFF BY 1
+    // console.log(current.data);
+    current = current.next;
+} while (current.next !== null);
