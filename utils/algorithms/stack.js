@@ -143,4 +143,21 @@ let factorial = (n) => {
     }
 };
 console.log(`factorial(5)`, factorial(5));
+/**
+ * 2. factorial with Statck
+ */
+let stackFactorial = (n) => {
+    let stk = new Stack();
+    for(let i = 1; i< n+1; i++){
+        stk.push(i);
+    }
+    console.log(stk);
+    let result = 1;
+    while(stk._stack.length){
+        console.log(result);
+        result *= stk.pop();
+    }
+    return result;
+}
+stackFactorial(5);
 
