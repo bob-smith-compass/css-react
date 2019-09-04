@@ -83,14 +83,18 @@ while(numToConvert._stack.length){
 let covertedNumber = new Stack();
 // let n = 459;
 let n = 10;
-while(n !== 0 ){
+n = 0;
+n = 1;
+n = 2;
+n = 55;
+do{
     // console.log(n%2);
     covertedNumber.push(n%base);
     n = parseInt(n/base);
     console.log(n);
     // console.log(n%base);
     // n = n/base;
-}
+} while(n !== 0 );
 console.log(covertedNumber);
 console.log(covertedNumber);
 let base2 = "";
