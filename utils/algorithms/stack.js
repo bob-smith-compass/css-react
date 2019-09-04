@@ -2,6 +2,7 @@
  * Stack
  * 1. push()
  * 2. pop()
+ * 3. peek() - does not remove element from the top
  */
 class Stack {
 
@@ -27,10 +28,15 @@ class Stack {
     pop(e) {
         return this._stack.pop(e);
     }
+    peek() {
+        return this._stack[this._stack.length-1];
+    }
 }
 let statck = new Stack("A");
+console.log(statck.peek());
 statck.push('B');
 statck.push('C');
+console.log(statck.peek());
 statck.push('D');
 
 console.log(statck.pop());
