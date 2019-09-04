@@ -120,3 +120,14 @@ function isPalindrom(str){
     return false;
 }
 console.log(isPalindrom("racecar"));
+console.log(isPalindrom("not"));
+console.log(isPalindrom("dad"));
+/**
+ * Strings
+ */
+console.log("string".length); // 6
+console.log("string".split("")); // [ 's', 't', 'r', 'i', 'n', 'g' ]
+console.log("Strings are object/arrays"[0]);
+let word = "Word";
+console.log(word[0]);
+
