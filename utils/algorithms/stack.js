@@ -71,7 +71,7 @@ console.log(a[index]); // 2
 console.log(a[--index]); // 1
 
 let number = 239;
-let base = 4;
+let base = 2;
 console.log((number+"").split(""));
 let numToConvert = new Stack((number+"").split(""));
 while(numToConvert._stack.length){
@@ -85,9 +85,17 @@ let covertedNumber = new Stack();
 let n = 10;
 while(n !== 0 ){
     // console.log(n%2);
-    // covertedNumber.push(n%2);
-    console.log(n/base);
+    covertedNumber.push(n%base);
+    n = parseInt(n/base);
+    console.log(n);
+    // console.log(n%base);
     // n = n/base;
-    n--;
 }
 console.log(covertedNumber);
+console.log(covertedNumber);
+let base2 = "";
+while(covertedNumber._stack.length-1){
+    // console.log(covertedNumber.pop());
+    base2 += covertedNumber.pop();
+}
+console.log(base2);
