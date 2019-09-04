@@ -131,3 +131,16 @@ console.log("Strings are object/arrays"[0]);
 let word = "Word";
 console.log(word[0]);
 
+/**
+ * Recursion
+ * 1. factorial
+ */
+let factorial = (n) => {
+    if(n===0){
+        return 1;
+    } else {
+        return factorial(n-1)*n;
+    }
+};
+console.log(`factorial(5)`, factorial(5));
+
