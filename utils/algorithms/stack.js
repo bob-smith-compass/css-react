@@ -103,3 +103,20 @@ while(covertedNumber._stack.length-1){
     base2 += covertedNumber.pop();
 }
 console.log(base2);
+
+function isPalindrom(str){
+    console.log(`str: ${str}`);
+    console.log(str.split(""));
+    console.log(str.split("").reverse());
+    console.log(str.split("").reverse().join(""));
+    if(str === ""){
+        return true;
+    } else {
+        // if(str.split("").reverse().join() === str) { // TODO: BUG
+        if(str.split("").reverse().join("") === str) { // BUG FIXED
+            return true;
+        }
+    }
+    return false;
+}
+console.log(isPalindrom("racecar"));
