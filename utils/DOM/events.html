@@ -15,10 +15,24 @@
 </head>
 <body>
 
+    <input  
+        id="input1" type="text"
+        onclick="handleClick(this)"
+    >
+
     <script>
+        handleClick = (which) => {
+            console.log(which); 
+            console.log(which.id); 
+            alert(which);
+
+        }
 
         document.onload = function() {
             alert('Document Loaded');
+        }
+        document.onunload = function(){
+            alert('Do you really want to exit?');
         }
         
         </script>
