@@ -13,8 +13,16 @@ class Queue {
         this._queue.push(e);
     }
     dequeue(e) {
-        this._queue.shift() {
-
-        }
+        return this._queue.shift();
     }
 }
+let queue = new Queue();
+queue.enqueue(0);
+queue.enqueue(1);
+queue.enqueue(2);
+console.log(queue);
+console.log(queue.dequeue());
+console.log(queue.dequeue());
+console.log(queue.dequeue());
+console.log(queue.dequeue()); // undefined
+console.log(queue);
