@@ -16,6 +16,26 @@
          this.data = data;
          this.next = null;
         }
+    head(data) {
+        console.log('head');
+
+    }
+    find(data) {
+        console.log('find');
+
+    }
+    insert(data) {
+        console.log('insert');
+
+    }
+    remove(data) {
+        console.log('remove');
+
+    }
+    display(data) {
+        console.log('display');
+
+    }
  }
 
  /**
@@ -58,3 +78,5 @@ do {
     // console.log(current.data);
     current = current.next;
 } while (current.next !== null);
+
+head.insert('E');

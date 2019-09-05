@@ -16,18 +16,31 @@
 <body>
 
     <input  
-        id="input1" type="text"
+        id="input1" type="text" value="Click me"
         onclick="handleClick(this, event)"
+    >
+
+    <input  
+        id="input2" type="text" value="Click me"
     >
 
     <script>
         handleClick = (which, e) => {
             console.log(which); 
             console.log(e); 
+            console.log(e.type); 
             console.log(which.id); 
+            console.log(which.value); 
+            console.log(which.type); 
             alert(which);
 
         }
+        document.getElementById('input1').addEventListener('click', (e) => {
+            console.log('Another click listener');
+        });
+        document.getElementById('input2').addEventListener('click', (e) => {
+            console.log('Another click listener');
+        });
 
         document.onload = function() {
             alert('Document Loaded');
