@@ -17,12 +17,13 @@
 
     <input  
         id="input1" type="text"
-        onclick="handleClick(this)"
+        onclick="handleClick(this, event)"
     >
 
     <script>
-        handleClick = (which) => {
+        handleClick = (which, e) => {
             console.log(which); 
+            console.log(e); 
             console.log(which.id); 
             alert(which);
 
