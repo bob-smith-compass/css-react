@@ -11,18 +11,30 @@
  * 8. List = collection of these Node(s)
  */
 
- class LinkedListNode {
-     constructor(data){
-         this.data = data;
-         this.next = null;
-        }
+class LinkedListNode {
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
     head(data) {
         console.log('head');
 
     }
-    find(data) {
-        console.log('find');
-
+    find(e) {
+        console.log(`e: ${e}`);
+        let current = this;
+        while (this.data !== e) {
+            // TODO: FIX BUG
+            console.log(current);
+            console.log(current.data);
+            console.log(current.next);
+            console.log('HERE');
+            // if (this.data === e) {
+            //     return current;
+            // }
+            current = current.next;
+        }
+        return current;
     }
     insert(data) {
         console.log('insert');
@@ -36,16 +48,16 @@
         console.log('display');
 
     }
- }
+}
 
- /**
-  * 1. Create Link List
-  * 2. Sole the following https://leetcode.com/problems/add-two-numbers/
-  * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-  * Output: 7 -> 0 -> 8
-  * Explanation: 342 + 465 = 807.
-  * 
-  */
+/**
+ * 1. Create Link List
+ * 2. Sole the following https://leetcode.com/problems/add-two-numbers/
+ * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+ * Output: 7 -> 0 -> 8
+ * Explanation: 342 + 465 = 807.
+ * 
+ */
 const head = new LinkedListNode(2);
 head.next = new LinkedListNode(4);
 head.next.next = new LinkedListNode(3);
@@ -58,7 +70,7 @@ list2.next.next = new LinkedListNode(4);
  */
 let current = head;
 
-while(current.next !== null){
+while (current.next !== null) {
     console.log(current.data);
     console.log(current.next);
     current = current.next;
@@ -67,7 +79,7 @@ while(current.next !== null){
      * if current.next is null it may have data but loop will exit
      * so print current .data
      */
-    if(current.next === null) {
+    if (current.next === null) {
         console.log(current.data);
     } // Or use do while loop
 
@@ -79,4 +91,5 @@ do {
     current = current.next;
 } while (current.next !== null);
 
+head.find(4);
 head.insert('E');
