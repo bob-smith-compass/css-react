@@ -15,12 +15,20 @@ class Queue {
     dequeue(e) {
         return this._queue.shift();
     }
+    back(e) {
+        return this._queue[this._queue.length-1];
+    }
+    front(e) {
+        return this._queue[0];
+    }
 }
 let queue = new Queue();
 queue.enqueue(0);
 queue.enqueue(1);
 queue.enqueue(2);
 console.log(queue);
+console.log(`front: ${queue.front()}`);
+console.log(`back: ${queue.back()}`);
 console.log(queue.dequeue());
 console.log(queue.dequeue());
 console.log(queue.dequeue());
