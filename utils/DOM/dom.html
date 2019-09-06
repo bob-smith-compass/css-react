@@ -11,6 +11,14 @@
             border: solid 1px gray;
             border-radius: 5px;
         }
+        .red {
+            background-color: red;
+            color: white;
+        }
+        .blue {
+            background-color: blue;
+            color: white;
+        }
         button {
             float: right;
         }
@@ -23,6 +31,12 @@
 
                 <button onclick="removeHandler()">Remove Click</button>
             </div>
+    </div>
+    <div id="blue" class="blue">blue
+        
+        <div id="red" class="red">red
+            <!-- e.target is still red  -->
+        </div> 
     </div>
 
     <script src="./dom.js"></script>
