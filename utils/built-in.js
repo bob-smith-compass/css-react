@@ -9,6 +9,8 @@ console.log(isFinite(12e-1)); // true
 console.log((Number.MAX_VALUE)); // 
 console.log(isFinite(Number.MAX_VALUE)); // true
 console.log(isFinite(Number.POSITIVE_INFINITY)); // false
-console.log(isNaN(NaN));
+console.log(isNaN(NaN)); // true
 console.log(isNaN(' '));
 console.log(isNaN(2/0)); // false
+console.log(encodeURI('http:\\www.ibm.com'));
+console.log(encodeURI('\\ibm.com\\'));

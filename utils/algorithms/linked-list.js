@@ -23,15 +23,13 @@ class LinkedListNode {
     find(e) {
         console.log(`e: ${e}`);
         let current = this;
-        while (this.data !== e) {
-            // TODO: FIX BUG
-            console.log(current);
-            console.log(current.data);
-            console.log(current.next);
-            console.log('HERE');
-            // if (this.data === e) {
-            //     return current;
-            // }
+        while (current.next !== null) {
+            if (this.data !== e) {
+                console.log(this.data === e);
+                // if (this.data === e) {
+                //     return current;
+                // }
+            }
             current = current.next;
         }
         return current;
