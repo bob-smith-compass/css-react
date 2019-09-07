@@ -45,11 +45,11 @@ class LinkedListNode {
     display(list) {
         let cur = list;
 
-        // while(cur.next !== null) {
+        do {
             console.log(cur.data);
             console.log(cur.next);
             cur = cur.next;
-        // }
+        } while (cur.next !== null);
     }
 }
 
@@ -96,4 +96,6 @@ do {
 
 head.find(4);
 head.insert('E');
-head.display();
+head.display(head);
+let list = new LinkedListNode('A');
+head.display(list);
