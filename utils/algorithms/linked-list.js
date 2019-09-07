@@ -42,9 +42,14 @@ class LinkedListNode {
         console.log('remove');
 
     }
-    display(data) {
-        console.log('display');
+    display(list) {
+        let cur = list;
 
+        // while(cur.next !== null) {
+            console.log(cur.data);
+            console.log(cur.next);
+            cur = cur.next;
+        // }
     }
 }
 
@@ -91,3 +96,4 @@ do {
 
 head.find(4);
 head.insert('E');
+head.display();
