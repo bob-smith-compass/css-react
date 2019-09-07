@@ -98,4 +98,6 @@ head.find(4);
 head.insert('E');
 head.display(head);
 let list = new LinkedListNode('A');
+// head.display(list); while (cur.next !== null);
+list.next = new LinkedListNode('B');
 head.display(list);
