@@ -22,10 +22,25 @@ console.log(f());
 
 let b_closure = {};
 for (let i = 0; i < 3; i++) {
-    b_closure[i] = (function (i) {
-        console.log(i);
-    })() // IFFE closure
+    (function (i) {
+        show = function (i) {
+            return console.log(i);
+        }
+    })(b_closure[i]) // IFFE closure
 }
-b_closure[0]();
-b_closure[1]();
-b_closure[2]();
+console.log(b_closure[0]); // ujdefined
+// b_closure[1](); // not a function
+console.log(b_closure[1]);
+console.log(b_closure[2]);
+
+for (let j = 0; i < 3; j++) {
+    console.log(`j: ${j}`);
+
+    (
+        function (i) {
+            console.log(i);
+            console.log(i);
+        }
+    )(j)
+
+}
