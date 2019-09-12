@@ -21,6 +21,17 @@ class Dictionary {
     delete(key) {
         delete this.dataStore[key];
     }
+    viewAll(){
+        this.dataStore.map( e => console.log(e));
+    }
+    show() {
+        /**
+         * Can also use Object key on arrays
+         */
+        for(let key in Object.keys(this.dataStore)) {
+            console.log(this.dataStore[key]);
+        }
+    }
 }
 
 let dic = new Dictionary();
@@ -60,6 +71,8 @@ console.log(found);
 console.log(dic); 
 dic.delete("John");
 console.log(dic); 
+dic.viewAll();
+dic.show();
 
 
 
