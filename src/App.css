@@ -96,3 +96,6 @@ place-self
   border: solid 1px gray;
   background-color: antiquewhite;
 }
+.chat {
+  min-height: 100%;
+}

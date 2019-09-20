@@ -13,6 +13,9 @@ import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import InputGroup from 'react-bootstrap/InputGroup';
 import caretright from './open-iconic/svg/arrow-right.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
   return (
@@ -42,11 +45,11 @@ function App() {
 
 
       <Navbar bg="primary" variant="dark">
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home">SymplCheck</Navbar.Brand>
         <Nav className="mr-auto">
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <Nav.Link href="#features">Login</Nav.Link>
+          <Nav.Link href="#pricing">Register</Nav.Link>
         </Nav>
       </Navbar>
       {/* 
@@ -55,7 +58,9 @@ function App() {
       <Button variant="outline-light">Search</Button>
     </Form> */}
 
-      <Form inline>
+
+{/* LOGID */}
+{/* <Form inline>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -77,15 +82,37 @@ function App() {
         <Button variant="primary" type="submit" float="right">
           Submit
     </Button>
+</Form> */}
+{/* LOGID */}
 
 
-
-
-      </Form>
-
-
+<Container>
+  <Row>
+    <Col md={4}></Col>
+  </Row>
+  <Row>
+    <Col md={4}></Col>
+  </Row>
+  <Row>
+    <Col md={4}></Col>
+  </Row>
+  {/* <Row> */}
+    {/* <Col md={4}></Col> */}
+    {/* <Col md={{ span: 4, offset: 4 }}>{`md={{ span: 4, offset: 4 }}`}</Col> */}
+  {/* </Row> */}
+  {/* <Row>
+    <Col md={{ span: 3, offset: 3 }}>{`md={{ span: 3, offset: 3 }}`}</Col>
+    <Col md={{ span: 3, offset: 3 }}>{`md={{ span: 3, offset: 3 }}`}</Col>
+  </Row>
+  <Row>
+    <Col md={{ span: 6, offset: 3 }}>{`md={{ span: 6, offset: 3 }}`}</Col>
+  </Row> */}
+</Container>
 
       <Form inline>
+
+      <Form.Control as="textarea" rows="3" placeholder="chat" className="chat"/>
+
 
 
         <InputGroup className="mb-3">
@@ -93,6 +120,7 @@ function App() {
       <InputGroup.Text>$</InputGroup.Text>
     </InputGroup.Prepend> */}
           <FormControl aria-label="Amount (to the nearest dollar)" />
+
           <InputGroup.Append>
             <InputGroup.Text><img src={caretright} alt="icon name" /></InputGroup.Text>
           </InputGroup.Append>
