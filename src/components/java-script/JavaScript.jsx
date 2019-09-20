@@ -2,7 +2,7 @@ import React from 'react';
 
 const JavaScript = () => {
     let handleLoad = () => {
-        alert('Image fully loaded');
+        // alert('Image fully loaded');
     }
     return (
         <div>
